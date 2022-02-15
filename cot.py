@@ -12,6 +12,8 @@ import os
 from typing import Any
 import argparse
 
+from cotlib import colors
+
 
 # App version
 __author__  = "idealtitude"
@@ -43,6 +45,19 @@ def get_args() -> argparse.Namespace:
 def main() -> int:
     """Entry point, main function."""
     args: argparse.Namespace = get_args()
+
+    if args.action:
+        color = colors.Color(args.action)
+        print(color.color.color_datas.color_string)
+        if color.color.color_datas.color_format is not None:
+            print(color.color.color_datas.color_format)
+            print(color.color.color_datas.components)
+        else:
+            print(f"Can't recognize color string format: {args.action}; exit...")
+            return EXIT_FAILURE
+    else:
+        print("No argument provided...")
+
     return EXIT_SUCCESS
 
 
