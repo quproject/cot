@@ -23,9 +23,11 @@ It can be used as a command line tool as well as with its GUI; its aims is to be
 
 To install wxPython, please follow the instructions on [link to the official documentation](https://wiki.wxpython.org/How%20to%20install%20wxPython "How to install wxPython (wiki.wxpython.org)") (available for Linux, Windows, and Mac).
 
+**cot** is a part of the apps suite fo the [QU project](https://github.com/quproject "github page of the QU project").
+
 #### Install
 
-Download (r clone) s repository, and extract it wherever you want, then launch cot.py.
+Download (or clone) this repository, and extract it wherever you want, then launch cot.py.
 
 ## Usage
 
@@ -36,6 +38,11 @@ Download (r clone) s repository, and extract it wherever you want, then launch c
 **[WIP]**
 
 -------
+
+### TODO
+
++ [ ] Documentation
++ [ ] Tests (using tox)
 
 ### Planned features
 
